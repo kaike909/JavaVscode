@@ -8,7 +8,8 @@ public class Second {
         
     public static String sayAge(){
         Scanner in = new Scanner(System.in);
-        String age = JOptionPane.showInputDialog("Digite a sua idade: ");
+        System.out.print("Digite a sua idade: ");
+        String age = in.next();
         in.close();
         return age;
     }

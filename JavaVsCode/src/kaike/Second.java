@@ -5,21 +5,21 @@ import java.util.*;
 public class Second {
 
     public static void sayName(){
-        Scanner inp = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Digite o seu nome: ");
-        String nome = inp.nextLine();
+        String nome = in.nextLine();
         System.out.print("Digite o seu sobrenome: ");
-        String sobrenome = inp.nextLine();
+        String sobrenome = in.nextLine();
         System.out.printf("%s %s e tem %d anos.", nome, sobrenome, sayAge());
-        inp.close();
+        in.close();
     }
 
     public static int sayAge(){
-        Scanner inp = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("Digiet a sua idade: ");
-        int age = inp.nextInt();
-        inp.hasNext();
-        inp.close();
+        int age = in.nextInt();
+        in.nextLine();
+        in.close();
         return age;
     }
 }

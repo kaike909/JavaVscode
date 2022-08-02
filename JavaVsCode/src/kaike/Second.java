@@ -3,10 +3,6 @@ package kaike;
 import java.util.*;
 
 public class Second {
-    public static void main(String[] args) {
-        sayAge();
-        sayName();
-    }
     
     public static void sayName(){
         Scanner in = new Scanner(System.in);

@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.Strings;
 
 public class NumeroString {
     public static void main(String[] args) {

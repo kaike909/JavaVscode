@@ -19,7 +19,7 @@ public class DesafioWhile {
         while(nota != -1){
             if (nota <= -2 || nota >10){
                 conti++;
-                System.out.print("Perdao digite uma nota valida ou -1 pra terminar o programa: ");
+                System.out.print("Perdao, digite uma nota valida: (-1 para sair) ");
                 nota = in.nextDouble();
             } else {
                 total += nota;
@@ -31,7 +31,7 @@ public class DesafioWhile {
 
         System.out.printf("Foram digitados %d notas invalidas!\n", conti);
         System.out.printf("Foram digitados %d notas validas!\n", contv);
-        System.out.printf("O total das notas digitadas foram: %.2f", total);
+        System.out.printf("Media total: %.2f", total/contv);
 
         in.close();
 

@@ -1,4 +1,4 @@
-package Controle;
+package Controle.If;
 
 import javax.swing.JOptionPane;
 

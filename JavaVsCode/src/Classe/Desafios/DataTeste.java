@@ -23,5 +23,15 @@ public class DataTeste {
         Data d4 = new Data(2, 1, 2020);
         System.out.println(d4.obterData());
 
+        Data d5, d6 = new Data();
+
+        d5 = new Data(5, 3, 2023);
+        System.out.println(d5.obterData());
+
+        d6.dia = 25;
+        d6.mes = 12;
+        d6.ano = 2022;
+        System.out.println(d6.obterData());
+
     }
 }

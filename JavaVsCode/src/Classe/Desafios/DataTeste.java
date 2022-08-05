@@ -17,5 +17,11 @@ public class DataTeste {
 
         System.out.println(d2.obterData());
 
+        Data d3 = new Data();
+        System.out.println(d3.obterData());
+        
+        Data d4 = new Data(2, 1, 2020);
+        System.out.println(d4.obterData());
+
     }
 }

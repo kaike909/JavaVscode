@@ -5,15 +5,33 @@ public class Produto {
     String nome;
     double preco, desconto;
 
-    double precoComDesconto(){
+    Produto() {
+    }
+
+    Produto(String nomeIni) {
+        nome = nomeIni;
+    }
+
+    Produto(String nomeIni, double precoini) {
+        nome = nomeIni;
+        preco = precoini;
+    }
+
+    Produto(String nomeIni, double precoini, double descini) {
+        nome = nomeIni;
+        preco = precoini;
+        desconto = descini;
+    }
+
+    double precoComDesconto() {
         return preco * (1 - desconto);
     }
-    
-    double precoComDesconto(double descGerente){
+
+    double precoComDesconto(double descGerente) {
         return preco * (1 - desconto - descGerente);
     }
 
-    static double media(double a, double b){
+    static double media(double a, double b) {
         double media = (a + b) / 2;
         return media;
     }

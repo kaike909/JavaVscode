@@ -21,10 +21,13 @@ public class DesafioNotas {
         double media = (n1 + n2) / 2;
 
         if (media >= 7.0 && media <= 10) {
+            System.out.printf("MEDIA = %.1f\n", media);
             System.out.println("Aprovado XD");
         } else if(media < 7 && media > 4) {
+            System.out.printf("MEDIA = %.1f\n", media);
             System.out.println("Em recuperação");
         } else {
+            System.out.printf("MEDIA = %.1f\n", media);
             System.out.println("Reprovado :( ");
         }
 

@@ -14,16 +14,16 @@ public class ProdutoTeste {
         p2.desconto = 0.29;
 
         System.out.println(p1.nome);
-        System.out.printf("R$ %.2f\n", Produto.precoComDesconto(p1.preco, 
-        p1.desconto));
+        double precoFinal1 = p1.precoComDesconto(0.15);
+        System.out.printf("R$ %.2f\n", precoFinal1);
         
         System.out.println(p2.nome);
-        System.out.printf("R$ %.2f\n", Produto.precoComDesconto(p2.preco, 
-        p2.desconto));
+        double precoFinal2 = p2.precoComDesconto();
+        System.out.printf("R$ %.2f\n", precoFinal2);
 
-        System.out.printf("\nMedia de preco dos produtos = R$ %.2f", Produto.
-        media(Produto.precoComDesconto(p1.preco, p1.desconto),Produto.
-        precoComDesconto(p2.preco, p2.desconto)));
+        double media = (precoFinal1 + precoFinal2) / 2;
+
+        System.out.printf("Media de preco dos produtos = R$ %.2f", media);
 
     }
 }

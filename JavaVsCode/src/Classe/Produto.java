@@ -5,9 +5,12 @@ public class Produto {
     String nome;
     double preco, desconto;
 
-    static double precoComDesconto(double a, double b){
-        double desc = a * (1 - b);
-        return desc;
+    double precoComDesconto(){
+        return preco * (1 - desconto);
+    }
+    
+    double precoComDesconto(double descGerente){
+        return preco * (1 - desconto - descGerente);
     }
 
     static double media(double a, double b){

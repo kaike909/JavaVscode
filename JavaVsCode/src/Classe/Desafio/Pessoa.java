@@ -1,4 +1,4 @@
-package Classe;
+package Classe.Desafio;
 
 public class Pessoa {
     // nome , peso, metodo comer() receber outro obj na classe comida
@@ -14,8 +14,14 @@ public class Pessoa {
         this.peso = peso;
     }
 
-    double comer(Comida com){
-        return com.peso + peso;
+    void comer(Comida c){
+        if (c != null){
+            this.peso += c.peso;
+        }
+    }
+
+    String apresenta() {
+        return String.format("%s esta pesando %.2f", nome, peso);
     }
 
 }

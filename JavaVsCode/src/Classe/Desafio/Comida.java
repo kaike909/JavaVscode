@@ -1,4 +1,4 @@
-package Classe;
+package Classe.Desafio;
 
 public class Comida {
     // Tera o nome da comida e peso da comida

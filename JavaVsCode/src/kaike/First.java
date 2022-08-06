@@ -15,8 +15,16 @@ public class First {
         System.out.print("Digite o seu sobrenome: ");
         eu.sobrenome = in.next();
 
-        System.out.println(eu.sayAge());
+        Third job = new Third();
+
+        System.out.print("Digite o seu cargo: ");
+        job.job = in.next();
+        System.out.print("Digite o seu salario: ");
+        job.slr = in.nextDouble();
+
         System.out.println(eu.sayName());
+        System.out.println(eu.sayAge());
+        System.out.println(job.myJob(eu));
 
         System.out.println(Calculadora.Calc(2, 4, "*"));
 

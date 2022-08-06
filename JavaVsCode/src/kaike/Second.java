@@ -6,7 +6,7 @@ public class Second {
     String nome, sobrenome;
 
     String sayAge(){
-        return String.format("A pessoa tem %d anos", idd);
+        return String.format("Voce tem %d anos", idd);
     }
 
     String sayName(){

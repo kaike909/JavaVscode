@@ -1,7 +1,6 @@
 package Colecoes;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class ConjuntoBaguncado {
     @SuppressWarnings({"rawtypes","unchecked"})

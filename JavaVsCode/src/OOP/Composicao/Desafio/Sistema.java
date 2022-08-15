@@ -15,7 +15,7 @@ public class Sistema {
         cliente.addItem(compra1);
         cliente.compras.add(compra2);
 
-        System.out.println(cliente.obterValorTtl());
+        System.out.printf("R$%.2f",cliente.obterValorTtl());
 
     }
 }

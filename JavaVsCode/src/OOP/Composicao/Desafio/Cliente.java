@@ -18,7 +18,7 @@ public class Cliente {
     double obterValorTtl(){
         double ttl = 0;
         for (Compra compra : compras) {
-            ttl = compra.obterValorTtl();
+            ttl += compra.obterValorTtl();
         }
         return ttl;
     }

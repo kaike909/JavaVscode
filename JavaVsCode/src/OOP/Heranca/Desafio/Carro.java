@@ -16,4 +16,8 @@ public class Carro {
         }
     }
 
+    public String toString(){
+        return "Velocidade atual " + velocidadeAtual + " Km/h";
+    }
+
 }

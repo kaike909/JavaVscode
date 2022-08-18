@@ -3,7 +3,7 @@ package OOP.Heranca;
 public class Jogo {
     public static void main(String[] args) {
 
-        Heroi heroi = new Heroi();
+        Heroi heroi = new Heroi(0, 0);
         Monstro monstro = new Monstro();
 
         monstro.andar(Direcao.NORTE);

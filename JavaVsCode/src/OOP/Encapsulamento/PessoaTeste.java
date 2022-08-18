@@ -2,9 +2,9 @@ package OOP.Encapsulamento;
 
 public class PessoaTeste {
     public static void main(String[] args) {
-        Pessoa p1 = new Pessoa(-45);
+        Pessoa p1 = new Pessoa("Pedro", -45);
         p1.setIdd(121);
 
-        System.out.println(p1.getIdd());
+        System.out.println(p1.toString());
     }
 }

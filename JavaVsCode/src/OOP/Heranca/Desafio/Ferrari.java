@@ -2,11 +2,11 @@ package OOP.Heranca.Desafio;
 
 public class Ferrari extends Carro{
 
-    Ferrari() {
+    public Ferrari() {
         this(360);
     }
 
-    Ferrari(int velocidadeMaxima){
+    public Ferrari(int velocidadeMaxima){
         super(velocidadeMaxima);
         deltaA = 35;
         deltaF = 25;

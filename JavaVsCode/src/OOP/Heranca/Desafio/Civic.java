@@ -2,7 +2,7 @@ package OOP.Heranca.Desafio;
 
 public class Civic extends Carro {
     
-    Civic() {
+    public Civic() {
         super(240);
     }    
 

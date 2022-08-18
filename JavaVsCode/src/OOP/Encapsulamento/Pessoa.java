@@ -2,11 +2,12 @@ package OOP.Encapsulamento;
 
 public class Pessoa {
 
-    private String nome;
+    private String nome, sobrenome;
     private int idd;
 
-    public Pessoa(String nome, int idd){
+    public Pessoa(String nome, String sobrenome,  int idd){
         setNome(nome);
+        setSobrenome(sobrenome);
         setIdd(idd);
     }
 
@@ -18,6 +19,18 @@ public class Pessoa {
         this.nome = nome;
     }
 
+    public String getSobrenome() {
+        return this.sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        this.sobrenome = sobrenome;
+    }
+
+    public String getNomeCompleto(){
+        return String.format("%s %s", getNome(), getSobrenome());
+    }
+    
     // Getter
     public int getIdd() {
         return idd;
@@ -33,7 +46,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return String.format("Ola me chamo %s e tenho %d anos!!", getNome(), getIdd());
+        return String.format("Ola me chamo %s e tenho %d anos!!", getNomeCompleto(), getIdd());
     }
 
 }

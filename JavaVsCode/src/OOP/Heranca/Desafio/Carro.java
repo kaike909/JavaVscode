@@ -4,27 +4,43 @@ public class Carro {
     
     final int VELOCIDADE_MAXIMA;
     protected int velocidadeAtual;
-    protected int deltaA = 5;
-    protected int deltaF = 5;
-
+    private int deltaA = 5;
+    private int deltaF = 5;
+    
     protected Carro(int VelocidadeMaxima) {
         VELOCIDADE_MAXIMA = VelocidadeMaxima;
     }
-
+    
     public void acelerar(){
-        if (velocidadeAtual + deltaA > VELOCIDADE_MAXIMA) {
+        if (velocidadeAtual + getDeltaA() > VELOCIDADE_MAXIMA) {
             velocidadeAtual = VELOCIDADE_MAXIMA;
         } else {
-            velocidadeAtual += deltaA;
+            velocidadeAtual += getDeltaA();
         }
     }
-
+    
     public void frear() {
-        if (velocidadeAtual >= deltaF) {
-            velocidadeAtual -= deltaF;
+        if (velocidadeAtual >= getDeltaF()) {
+            velocidadeAtual -= getDeltaF();
         } else {
             velocidadeAtual = 0;
         }
+    }
+    
+    public int getDeltaA() {
+        return this.deltaA;
+    }
+
+    public void setDeltaA(int deltaA) {
+        this.deltaA = deltaA;
+    }
+
+    public int getDeltaF() {
+        return this.deltaF;
+    }
+
+    public void setDeltaF(int deltaF) {
+        this.deltaF = deltaF;
     }
 
     public String toString(){

@@ -8,7 +8,7 @@ public class Pessoa {
         setPeso(peso);
     }
 
-    public void comer(Comida comida){
+    public void comer(Comida comida) {
         this.peso += comida.getPeso();
     }
 
@@ -22,7 +22,7 @@ public class Pessoa {
         }
     }
 
-    public String toString(){
+    public String toString() {
         return String.format("A pessoa esta pesando %.2f Kg", getPeso());
     }
 

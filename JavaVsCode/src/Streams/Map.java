@@ -14,7 +14,10 @@ public class Map {
         marcas.stream().map((m -> m.toUpperCase())).forEach(print);
 
         System.out.println("\nUsando composição...");
-        marcas.stream().map(Utilitarios.maiuscula).map(Utilitarios.primeiraLetra).map(Utilitarios::grito)
+        marcas.stream()
+                .map(Utilitarios.maiuscula)
+                .map(Utilitarios.primeiraLetra)
+                .map(Utilitarios::grito)
                 .forEach(print);
 
     }

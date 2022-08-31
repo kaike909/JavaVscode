@@ -26,8 +26,8 @@ public class Campo {
 
     public boolean addNeighbor(Campo neighbor) {
         boolean difLin = lin != neighbor.lin;
-        boolean difcol = col != neighbor.col;
-        boolean diagonal = difLin && difcol;
+        boolean difCol = col != neighbor.col;
+        boolean diagonal = difLin && difCol;
 
         int deltaLin = Math.abs(lin - neighbor.lin);
         int deltaCol = Math.abs(col - neighbor.col);
@@ -42,5 +42,7 @@ public class Campo {
         } else {
             return false;
         }
+
     }
+
 }

@@ -13,15 +13,15 @@ public class Campo {
 
     private List<Campo> neighbors = new ArrayList<>();
 
+    public Campo(int lin, int col) {
+        this.lin = lin;
+        this.col = col;
+    }
+
     public Campo(int lin, int col, boolean mined) {
         this.lin = lin;
         this.col = col;
         this.mined = mined;
-    }
-
-    public Campo(int lin, int col) {
-        this.lin = lin;
-        this.col = col;
     }
 
     public boolean addNeighbor(Campo neighbor) {

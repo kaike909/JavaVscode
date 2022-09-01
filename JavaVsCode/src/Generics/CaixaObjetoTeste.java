@@ -3,15 +3,15 @@ package Generics;
 public class CaixaObjetoTeste {
     public static void main(String[] args) {
         CaixaObjeto caixaA = new CaixaObjeto();
-        caixaA.guardar(2.3); // double -> Double
+        caixaA.pocket(2.3); // double -> Double
 
-        Double coisaA = (Double) caixaA.abrir();
+        Double coisaA = (Double) caixaA.open();
         System.out.println(coisaA);
 
         CaixaObjeto caixaB = new CaixaObjeto();
-        caixaB.guardar("Ola");
+        caixaB.pocket("Ola");
 
-        String coisaB = (String) caixaB.abrir();
+        String coisaB = (String) caixaB.open();
         System.out.println(coisaB);
 
     }

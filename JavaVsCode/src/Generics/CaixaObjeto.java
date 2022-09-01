@@ -4,11 +4,11 @@ public class CaixaObjeto {
 
     private Object coisa;
 
-    public void guardar(Object coisa) {
+    public void pocket(Object coisa) {
         this.coisa = coisa;
     }
 
-    public Object abrir() {
+    public Object open() {
         return coisa;
     }
 

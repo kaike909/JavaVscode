@@ -14,5 +14,11 @@ public class CaixaObjetoTeste {
         String coisaB = (String) caixaB.open();
         System.out.println(coisaB);
 
+        CaixaObjeto caixaC = new CaixaObjeto();
+        caixaC.pocket(45);
+
+        Integer coisaC = (Integer) caixaC.open();
+        System.out.println(coisaC);
+
     }
 }

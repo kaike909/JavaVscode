@@ -3,11 +3,8 @@ package br.com.kaike.cm.visao;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 
-import javax.print.DocFlavor.URL;
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.event.*;
 

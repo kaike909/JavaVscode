@@ -8,6 +8,7 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
 import javax.swing.event.*;
 
 import br.com.kaike.cm.modelo.Campo;
@@ -49,8 +50,13 @@ public class BotaoCampo extends JButton
                 break;
             default:
                 aplicarEstiloPadrao();
-                break;
         }
+
+        SwingUtilities.invokeLater(() -> {
+            repaint();
+            validate();
+        });
+
     }
 
     private void aplicarEstiloAbrir() {

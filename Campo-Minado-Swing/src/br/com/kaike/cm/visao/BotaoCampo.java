@@ -118,7 +118,9 @@ public class BotaoCampo extends JButton
         if (e.getButton() == 1) {
             campo.abrir();
         } else {
-            campo.alternarMarcacao();
+            if (campo.isFechado() == true) {
+                campo.alternarMarcacao();
+            }
         }
     }
 

@@ -5,7 +5,7 @@ import java.util.*;
 public class Memoria {
 
     private enum TipoComando {
-        ZERAR, SINAL, NUM, DIV, MULT, SUB, SOMA, IGUAL, VIRG
+        ZERAR, SINAL, PORC, NUM, DIV, MULT, SUB, SOMA, IGUAL, VIRG
     }
 
     private static final Memoria instancia = new Memoria();
@@ -79,6 +79,8 @@ public class Memoria {
             resultado = numeroBuffer * numeroAtual;
         } else if (ultimaOperacao == TipoComando.DIV) {
             resultado = numeroBuffer / numeroAtual;
+        } else if (ultimaOperacao == TipoComando.PORC) {
+            resultado = numeroBuffer / 100;
         }
 
         String texto = Double.toString(resultado).replace(".", ",");
@@ -112,6 +114,8 @@ public class Memoria {
                 return TipoComando.VIRG;
             } else if ("±".equals(texto)) {
                 return TipoComando.SINAL;
+            } else if ("%".equals(texto)) {
+                return TipoComando.PORC;
             }
         }
         return null;

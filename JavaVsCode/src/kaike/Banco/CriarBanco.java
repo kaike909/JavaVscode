@@ -16,12 +16,9 @@ public class CriarBanco {
 
     public void criarBanco() throws SQLException {
 
-        final String url = "jdbc:mysql://localhost?verifyServerCertificate=false&useSSL=true";
-        final String user = "root";
-        final String password = "897410";
-        Scanner in = new Scanner(System.in);
+        Connection conn = MakeConnection.getConnection();
 
-        Connection conn = DriverManager.getConnection(url, user, password);
+        Scanner in = new Scanner(System.in);
 
         System.out.print("Digite o nome do Banco de dados: ");
         this.nome = in.nextLine();
@@ -38,12 +35,9 @@ public class CriarBanco {
 
     public void droparBanco() throws SQLException {
 
-        final String url = "jdbc:mysql://localhost?verifyServerCertificate=false&useSSL=true";
-        final String user = "root";
-        final String password = "897410";
-        Scanner in = new Scanner(System.in);
+        Connection conn = MakeConnection.getConnection();
 
-        Connection conn = DriverManager.getConnection(url, user, password);
+        Scanner in = new Scanner(System.in);
 
         System.out.print("Qual banco de dados voce quer dropar? ");
         this.nome = in.nextLine();

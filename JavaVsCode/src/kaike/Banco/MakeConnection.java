@@ -10,9 +10,9 @@ public class MakeConnection {
 
         try {
             Properties prop = getProperties();
-            final String url = prop.getProperty("banco.url");
-            final String user = prop.getProperty("banco.user");
-            final String password = prop.getProperty("banco.password");
+            final String url = prop.getProperty("Banco.url");
+            final String user = prop.getProperty("Banco.user");
+            final String password = prop.getProperty("Banco.password");
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException | IOException e) {
             throw new RuntimeException(e);

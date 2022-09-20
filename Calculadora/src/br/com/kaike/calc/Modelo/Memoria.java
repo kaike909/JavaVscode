@@ -80,7 +80,7 @@ public class Memoria {
         } else if (ultimaOperacao == TipoComando.DIV) {
             resultado = numeroBuffer / numeroAtual;
         } else if (ultimaOperacao == TipoComando.PORC) {
-            resultado = numeroBuffer / 100;
+            resultado = numeroBuffer / 100 - numeroAtual;
         }
 
         String texto = Double.toString(resultado).replace(".", ",");

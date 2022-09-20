@@ -3,7 +3,7 @@ package kaike.Banco;
 import java.sql.*;
 import java.util.*;
 
-public class CriarBanco {
+public class CreateBank {
     private String nome;
 
     public String getNome() {

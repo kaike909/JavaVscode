@@ -16,6 +16,7 @@ public class NovoUsuario {
         novoUsuario.setId(1L);
         em.persist(novoUsuario);
         em.close();
+        emf.close();
 
     }
 }

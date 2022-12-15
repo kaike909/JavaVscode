@@ -5,7 +5,6 @@ import java.util.*;
 public class DesafioNotas {
     public static void main(String[] args) {
 
-        Locale.setDefault(new Locale("en", "US"));
         Scanner in = new Scanner(System.in);
 
         System.out.print("Digite quantas notas voce quer: ");
@@ -13,8 +12,8 @@ public class DesafioNotas {
 
         double[] notas = new double[n];
 
-        for (int i=0;i<notas.length;i++){
-            System.out.printf("Digite a %da nota: ", i+1);
+        for (int i = 0; i < notas.length; i++) {
+            System.out.printf("Digite a %da nota: ", i + 1);
             notas[i] = in.nextDouble();
         }
 
@@ -24,7 +23,7 @@ public class DesafioNotas {
         }
 
         total = total / notas.length;
-        System.out.println(total);
+        System.out.printf("%.2f\n", total);
         if (total >= 7.0) {
             System.out.println("APROVADO!");
         } else {

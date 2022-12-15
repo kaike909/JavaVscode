@@ -1,13 +1,11 @@
 package Lambda;
 
-import java.util.Locale;
 import java.util.function.*;
 
 public class Desafio {
 
     public static void main(String[] args) {
 
-        Locale.setDefault(new Locale("en", "US"));
 
         /*
          * 1. A partir do produto calcular o preco real (com desconto)

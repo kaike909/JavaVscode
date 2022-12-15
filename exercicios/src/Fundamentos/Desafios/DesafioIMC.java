@@ -1,12 +1,10 @@
 package Fundamentos.Desafios;
 
 import java.util.Scanner;
-import java.util.Locale;
 
 public class DesafioIMC {
     public static void main(String[] args) {
         
-        Locale.setDefault(new Locale("en", "US"));
         Scanner in = new Scanner(System.in);
 
         System.out.print("Digite a sua altura: ");

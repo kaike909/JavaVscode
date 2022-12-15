@@ -1,13 +1,11 @@
 package Controle.Desafios;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class DesafioWhile {
     public static void main(String[] args) {
         // Calcular a media de uma turma com qtd indef.
         // tem q ter uma variavel pra contar as medias
-        Locale.setDefault(new Locale("en", "US"));
         Scanner in = new Scanner(System.in);
 
         System.out.print("Digite as notas de uma turma: (-1 para sair)");

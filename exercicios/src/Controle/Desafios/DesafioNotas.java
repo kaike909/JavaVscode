@@ -1,6 +1,5 @@
 package Controle.Desafios;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class DesafioNotas {
@@ -10,7 +9,6 @@ public class DesafioNotas {
          * "Aprovado", se a nota for menor que 7.0 e maior do que 4.0 imprime no 
          * console "Recuperação", caso contrário imprime no console "Reprovado".
          */
-        Locale.setDefault(new Locale("en", "US"));
         Scanner in = new Scanner(System.in);
 
         System.out.print("Primeira nota: ");

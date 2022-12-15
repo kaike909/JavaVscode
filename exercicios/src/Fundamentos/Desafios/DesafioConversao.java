@@ -1,12 +1,10 @@
 package Fundamentos.Desafios;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class DesafioConversao {
     public static void main(String[] args) {
 
-        Locale.setDefault(new Locale("en","US"));
         Scanner in = new Scanner(System.in);
 
         System.out.print("Digite o primeiro salario: R$ ");

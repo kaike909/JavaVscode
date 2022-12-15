@@ -5,7 +5,6 @@ import java.util.*;
 public class Matriz {
     public static void main(String[] args) {
 
-        Locale.setDefault(new Locale("en", "US"));
         Scanner in = new Scanner(System.in);
 
         System.out.print("Quantos alunos? ");

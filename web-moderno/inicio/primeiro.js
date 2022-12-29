@@ -8,3 +8,6 @@ let nota2 = 5.789;
 var media = (nota1 + nota2) / 2
 
 console.log(media.toFixed(2))
+
+let escola = 'cod3r';
+console.log(escola.charAt(2))

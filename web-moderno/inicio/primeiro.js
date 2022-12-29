@@ -12,12 +12,12 @@ console.log(media.toFixed(2))
 let escola = 'cod3r';
 console.log(escola.charAt(2))
 
- let nomes = 'Ana, Bianca, Carla, Debora'
+let nomes = 'Ana, Bianca, Carla, Debora'
 console.log(nomes.split(','))
- for(let i = 0; i < nomes.length; i++){
-    if(nomes.charAt(i) === ',' || nomes.charAt(i) === ' '){
+for (let i = 0; i < nomes.length; i++) {
+    if (nomes.charAt(i) === ',' || nomes.charAt(i) === ' ') {
         continue
     } else {
         console.log(nomes.charAt(i))
     }
- }
+}

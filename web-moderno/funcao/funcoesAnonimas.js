@@ -16,7 +16,11 @@ imprimeResultado(3, 4, (x, y) => x * y)
 const pessoa = {
     falar: function(){
         console.log('Ola!')
+    },
+    comer: () => {
+        console.log('Que gostoso esse lanche!')
     }
 }
 
 pessoa.falar()
+pessoa.comer()

@@ -17,10 +17,10 @@ const pessoa = {
     falar: function(){
         console.log('Ola!')
     },
-    comer: () => {
-        console.log('Que gostoso esse lanche!')
+    comer: (param) => {
+        console.log(`Que gostoso esse ${param}!`)
     }
 }
 
 pessoa.falar()
-pessoa.comer()
+pessoa.comer('lanche')

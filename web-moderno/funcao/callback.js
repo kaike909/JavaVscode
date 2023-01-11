@@ -42,3 +42,9 @@ const notasAltas2 = notas.filter(notasMaiorQue7)
 
 console.log(notasBaixas2)
 console.log(notasAltas2)
+
+pontinhos('Callback 3!')
+
+document.getElementsByTagName('body')[0].onclick = function(e) {
+    console.log('O evento ocorreu!')
+}

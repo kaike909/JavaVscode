@@ -24,12 +24,12 @@ for (let i in notas) {
 let notasAltas = []
 
 for (let i in notas) {
-    if (notas[i] >= 7){
+    if (notas[i] >= 7) {
         notasAltas.push(notas[i])
     }
 }
 
-notasBaixas = notas.filter( n => n < 7)
+notasBaixas = notas.filter(n => n < 7)
 notasAltas = notas.filter(n => n >= 7)
 
 console.log(notasBaixas)

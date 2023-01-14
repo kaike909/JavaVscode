@@ -1,4 +1,5 @@
 console.log(soma(3, 4))
+console.log(div(3, 4))
 
 // function declaration
 function soma(x, y){
@@ -14,6 +15,10 @@ console.log(sub(3, 4))
 // named function expression
 const mult = function mult(x, y){
     return x * y
+}
+
+function div(x, y){
+    return x / y
 }
 
 console.log(mult(3, 4))

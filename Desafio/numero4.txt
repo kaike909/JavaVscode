@@ -1,0 +1,22 @@
+O carro e o caminhao estao a mesma distancia de Ribeirao Preto ao se cruzarem,
+se encontrarão a 60,9km de Ribeirao Preto.
+
+(Carro) x1 - v1 * t
+(Caminhao) x2 = 100km - v2 * t
+
+Como o caminhao tem 2 pedagios como obstaculos de 5 minutos cada calcula-se:
+Tso = 100km/80kmh = 1,25h
+
+Entao perde-se 10 minutos, equivalente a 0,17 horas, nos pedagios, logo o tempo de
+viagem do caminhao sera de 1,25 + 0,17 = 1,42 horas, sendo sua velocidade media de:
+v2 = 100km/1,42h = 70,6kmh
+
+Tendo todas essas informações, o ponto em que se cruzam sera de:
+t = x1/v1
+t = (x2 - 100km)/ -v2
+x1 = x2 => x/v1 = (x - 100km)/-v2
+-v2 * x = v1 * x - v1 * 100km
+x = (v1*100)/(v1 + v2)
+x = (110kmh * 100km)/(110kmh + 70,6kmh)
+x = 11000/180,6
+x = 60,9km

@@ -6,4 +6,4 @@ function invertString(str) {
     return newStr;
 }
 
-console.log(invertString('Target'));
+console.log(invertString('Target')); // Saida tegraT

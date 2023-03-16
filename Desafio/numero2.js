@@ -8,4 +8,4 @@ function fibonacci(n) {
     return f;
 }
 
-console.log(fibonacci(8));
+console.log(fibonacci(8)); // Saida [ 0, 1,  1,  2, 3, 5, 8, 13, 21 ]
